@@ -3,36 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 1. TITLE: Главный заголовок страницы (Ключевые слова) -->
-    <title>ООО «Бухара Нефт Капитал» | Надёжный поставщик нефтепродуктов, ГСМ и топлива в Узбекистане</title>
-
-    <!-- 0. FAVICONS и APPLE TOUCH ICONS: Для оптимизации на всех устройствах и браузерах -->
-    <!-- Используем загруженный файл (apple-touch-icon.png) для устройств Apple -->
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <!-- Для стандартного фавикона используем компактный плейсхолдер -->
-    <link rel="icon" type="image/png" sizes="32x32" href="https://placehold.co/32x32/1E3A8A/F59E0B?text=BNC">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://placehold.co/16x16/1E3A8A/F59E0B?text=BNC">
-    <!-- <link rel="manifest" href="/site.webmanifest"> -->
-    <!-- Конец секции фавиконов -->
-
-    <!-- 2. META DESCRIPTION: Описание для поисковых систем (макс. 160 символов) -->
-    <meta name="description" content="Надежный поставщик нефтепродуктов, ГСМ, дизельного топлива и бензина по всей территории Узбекистана. Прямые поставки, собственная логистика и гарантия качества от ООО «Бухара Нефт Капитал».">
-    
-    <!-- 3. META KEYWORDS: Ключевые слова (хоть и менее важны, но полезны) -->
-    <meta name="keywords" content="нефтепродукты, ГСМ, дизельное топливо, бензин Аи-95, Узбекистан, Бухара Нефт Капитал, оптовые поставки топлива, масла">
-
-    <!-- 4. CANONICAL LINK: Предотвращает проблемы с дублированием контента для SEO -->
-    <link rel="canonical" href="https://www.bukharaneftcapital.uz/">
-
-    <!-- 5. OPEN GRAPH (OG) / Социальные сети: Для корректного превью в Telegram, Facebook и т.д. -->
-    <meta property="og:title" content="ООО «Бухара Нефт Капитал» | Надёжный поставщик нефтепродуктов и ГСМ">
-    <meta property="og:description" content="Надежный поставщик нефтепродуктов, ГСМ, дизельного топлива и бензина по всей территории Узбекистана. Прямые поставки и собственная логистика.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.bukharaneftcapital.uz/">
-    <!-- Используем заглушку для изображения в соцсетях, так как локальный файл bnk_logo.png недоступен -->
-    <meta property="og:image" content="https://placehold.co/1200x630/1E3A8A/F59E0B?text=BNC+Oil+Capital">
-    <meta property="og:site_name" content="ООО «Бухара Нефт Капитал»">
-
+    <title>ООО «Бухара Нефт Капитал» | Надёжный поставщик нефтепродуктов и ГСМ</title>
     <!-- Подключение Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -44,6 +15,8 @@
             background-color: #f8fafc; /* Светло-серый фон */
         }
         
+        /* Удалены стили для фонового изображения Hero-секции */
+
         /* Для совместимости с навигацией по хешу */
         :target::before {
             content: "";
@@ -112,13 +85,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
             <!-- Логотип/Название компании -->
             <div class="flex items-center space-x-2">
-               <!-- Логотип/Название компании -->
-            <div class="flex items-center space-x-2">
                 <!-- Логотип bnk_logo.png добавлен здесь -->
                 <img src="bnk_logo.png" alt="Логотип ООО Бухара Нефт Капитал" class="h-16 w-auto">
-                <div class="text-2xl font-extrabold text-primary-blue">
+                <h1 class="text-2xl font-extrabold text-primary-blue">
                     <span class="text-secondary-teal">Бухара</span> Нефт Капитал
-                </div>
+                </h1>
             </div>
 
             <!-- Десктопная навигация -->
@@ -129,7 +100,7 @@
             </nav>
 
             <!-- Кнопка бургер-меню для мобильных устройств -->
-            <button class="md:hidden text-primary-blue focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" aria-label="Открыть меню">
+            <button class="md:hidden text-primary-blue focus:outline-none" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
             </button>
         </div>
@@ -140,18 +111,23 @@
             <a href="#services" onclick="scrollToSection('services'); document.getElementById('mobile-menu').classList.add('hidden')" class="block px-4 py-3 text-lg hover:bg-bg-light transition duration-300">Продукция</a>
             <a href="#contact" onclick="scrollToSection('contact'); document.getElementById('mobile-menu').classList.add('hidden')" class="block px-4 py-3 text-lg bg-primary-blue text-white hover:bg-secondary-teal transition duration-300">Контакты</a>
         </div>
+        
+            <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+            </header>
     </header>
 
     <main>
-        <!-- 2. Секция Hero / Вступление (Конвертация h2 в h1 для SEO) -->
+        <!-- 2. Секция Hero / Вступление (Теперь сплошной темно-синий фон) -->
         <section id="hero" class="py-20 sm:py-32 text-white bg-primary-blue">
             <div id="hero-content" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <!-- 6. H1: Главный, уникальный заголовок страницы (Лучший SEO-практика) -->
-                <h1 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight">
+                <h2 class="text-4xl sm:text-6xl font-extrabold mb-4 leading-tight">
                     Энергия, которая движет <br class="hidden sm:inline"> промышленность <span class="text-secondary-teal">Узбекистана</span>
-                </h1>
+                </h2>
                 <p class="text-xl sm:text-2xl mb-8 font-light max-w-3xl mx-auto">
-                 ООО «Бухара Нефт Капитал» — надёжный поставщик нефтепродуктов и ГСМ по всей территории Республики.
+                    ООО «Бухара Нефт Капитал» — надёжный поставщик нефтепродуктов и ГСМ по всей территории Республики.
                 </p>
                 <a href="#contact" onclick="scrollToSection('contact')" class="inline-block px-10 py-4 bg-secondary-teal text-text-dark font-bold text-lg rounded-xl shadow-2xl hover:bg-opacity-90 transition duration-300 transform hover:scale-105">
                     Получить коммерческое предложение
@@ -162,17 +138,15 @@
         <!-- 3. Секция О нас -->
         <section id="about" class="py-16 sm:py-24 bg-bg-light">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- H2: Заголовок секции -->
                 <h2 class="text-4xl font-bold text-center mb-12 text-primary-blue">
-                    О компании <span class="text-secondary-teal"> «Бухара Нефт Капитал»</span>
+                    О компании <span class="text-secondary-teal">ООО «Бухара Нефт Капитал»</span>
                 </h2>
                 
-                <!-- Контент -->
+                <!-- Контент (ранее был в сетке, теперь просто один блок) -->
                 <div class="bg-white p-8 sm:p-12 rounded-2xl shadow-xl space-y-6">
-                    <!-- H3: Подзаголовок -->
                     <h3 class="text-3xl font-bold text-primary-blue">Динамичное развитие и экспертиза</h3>
                     <p class="text-lg leading-relaxed">
-                         «Бухара Нефт Капитал» — динамично развивающаяся компания с многолетним опытом работы в сфере оптовых поставок нефтепродуктов и горюче-смазочных материалов (ГСМ) по всей территории Республики Узбекистан. Наша деятельность направлена на обеспечение предприятий качественными топливно-энергетическими ресурсами, отвечающими всем требованиям национальных и международных стандартов.
+                        ООО «Бухара Нефт Капитал» — динамично развивающаяся компания с многолетним опытом работы в сфере оптовых поставок нефтепродуктов и горюче-смазочных материалов (ГСМ) по всей территории Республики Узбекистан. Наша деятельность направлена на обеспечение предприятий качественными топливно-энергетическими ресурсами, отвечающими всем требованиям национальных и международных стандартов.
                     </p>
                     
                     <!-- Опыт и надёжность -->
@@ -180,7 +154,6 @@
                         Благодаря глубокой экспертизе и профессионализму нашей команды, мы обеспечиваем стабильные поставки продукции для промышленных, строительных, транспортных и сельскохозяйственных компаний. Репутация «Бухара Нефт Капитал» основана на ответственности, прозрачности и долгосрочном партнёрстве.
                     </p>
                     
-                    <!-- H3: Подзаголовок -->
                     <h3 class="text-3xl font-bold text-primary-blue pt-4">Собственная логистика</h3>
                     <p class="text-lg leading-relaxed">
                         Компания располагает собственным автопарком и логистической инфраструктурой, что обеспечивает оперативную и бесперебойную доставку нефтепродуктов по всей стране. Контроль на каждом этапе транспортировки гарантирует сохранность качества топлива до момента его получения клиентом.
@@ -211,35 +184,31 @@
         <!-- 4. Секция Ассортимент продукции и преимущества -->
         <section id="services" class="py-16 sm:py-24">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- H2: Заголовок секции -->
                 <h2 class="text-4xl font-bold text-center mb-12 text-primary-blue">
                     <span class="text-secondary-teal">Ассортимент</span> и Преимущества
                 </h2>
                 
-                <!-- H3: Подзаголовок ассортимента -->
+                <!-- Ассортимент -->
                 <h3 class="text-3xl font-bold text-center mb-8 text-text-dark">Наш широкий ассортимент продукции</h3>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
                     
                     <!-- Продукт 1: Дизельное топливо -->
                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-b-4 border-primary-blue text-center">
-                        <div class="text-4xl text-primary-blue mb-3">⛽</div> 
-                        <!-- H4: Название продукта -->
+                        <div class="text-4xl text-primary-blue mb-3">⛽</div> 
                         <h4 class="text-xl font-bold mb-2 text-text-dark">Дизельное топливо</h4>
-                        <p class="text-gray-600">Евро,К-5 и другие марки.</p>
+                        <p class="text-gray-600">Дизельное топливо различных марок.</p>
                     </div>
 
-                    <!-- Продукт 2: Бензин -->
+                    <!-- Продукт 2: Бензин (Удалено Аи-80) -->
                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-b-4 border-secondary-teal text-center">
                         <div class="text-4xl text-secondary-teal mb-3">🚗</div>
-                        <!-- H4: Название продукта -->
                         <h4 class="text-xl font-bold mb-2 text-text-dark">Бензин</h4>
-                        <p class="text-gray-600">Аи-91,Аи-92,Аи-95 и другие марки.</p>
+                        <p class="text-gray-600">Аи-91, Аи-95 и другие марки.</p>
                     </div>
 
                     <!-- Продукт 3: Мазут и Керосин -->
                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-b-4 border-primary-blue text-center">
                         <div class="text-4xl text-primary-blue mb-3">🔥</div>
-                        <!-- H4: Название продукта -->
                         <h4 class="text-xl font-bold mb-2 text-text-dark">Мазут, Керосин, Битум</h4>
                         <p class="text-gray-600">Продукты для промышленности и строительства.</p>
                     </div>
@@ -247,13 +216,12 @@
                     <!-- Продукт 4: Масла и ГСМ -->
                     <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300 border-b-4 border-secondary-teal text-center">
                         <div class="text-4xl text-secondary-teal mb-3">💧</div>
-                        <!-- H4: Название продукта -->
                         <h4 class="text-xl font-bold mb-2 text-text-dark">Моторные и Индустриальные масла</h4>
                         <p class="text-gray-600">Прочие нефтехимические продукты.</p>
                     </div>
                 </div>
 
-                <!-- H3: Подзаголовок преимуществ -->
+                <!-- Преимущества -->
                 <h3 class="text-3xl font-bold text-center mb-8 text-text-dark">Наши преимущества</h3>
                 <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                     <div class="flex items-start space-x-3 p-4 bg-white rounded-lg shadow-md border-l-4 border-secondary-teal">
@@ -284,7 +252,6 @@
         <!-- 5. Секция Контакты и Форма обратной связи -->
         <section id="contact" class="py-16 sm:py-24 bg-bg-light">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <!-- H2: Заголовок секции -->
                 <h2 class="text-4xl font-bold text-center mb-12 text-primary-blue">
                     Свяжитесь с нами
                 </h2>
@@ -292,7 +259,6 @@
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white p-8 sm:p-12 rounded-2xl shadow-xl">
                     <!-- Контактная форма -->
                     <div>
-                        <!-- H3: Подзаголовок формы -->
                         <h3 class="text-2xl font-semibold mb-6 text-text-dark">Обсудим ваш проект?</h3>
                         <form onsubmit="submitForm(event)" class="space-y-6">
                             
@@ -318,7 +284,6 @@
 
                     <!-- Контактные данные -->
                     <div class="space-y-8 lg:mt-6">
-                        <!-- H3: Подзаголовок контактов -->
                         <h3 class="text-2xl font-semibold mb-6 text-text-dark">Наши данные</h3>
                         
                         <!-- Телефон -->
@@ -330,7 +295,7 @@
                             </div>
                         </div>
 
-                        <!-- Email -->
+                        <!-- Email (Обновленный) -->
                         <div class="flex items-start space-x-4">
                             <div class="text-secondary-teal text-3xl">📧</div>
                             <div>
@@ -339,9 +304,10 @@
                             </div>
                         </div>
 
-                        <!-- Instagram (добавлена aria-label для SEO/A11y) -->
-                        <a href="https://www.instagram.com/bnk_opt_gsm/" target="_blank" class="flex items-start space-x-4 group hover:text-primary-blue transition duration-300" aria-label="Профиль Instagram @bnk_opt_gsm">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-secondary-teal group-hover:text-primary-blue transition duration-300"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/bnk_opt_gsm/" target="_blank" class="flex items-start space-x-4 group hover:text-primary-blue transition duration-300">
+                            <!-- Instagram Icon SVG (Иконки SVG оставлены для дизайна, так как они не являются загружаемыми изображениями) -->
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-secondary-teal group-hover:text-primary-blue transition duration-300"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
                             <div>
                                 <p class="text-gray-500 text-base">Instagram</p>
                                 <p class="text-lg font-medium text-text-dark">@bnk_opt_gsm</p>
@@ -349,8 +315,9 @@
                             </div>
                         </a>
 
-                        <!-- Telegram (добавлена aria-label для SEO/A11y) -->
-                        <a href="https://t.me/bnk_sales" target="_blank" class="flex items-start space-x-4 group hover:text-primary-blue transition duration-300" aria-label="Профиль Telegram @bnk_sales">
+                        <!-- Telegram -->
+                        <a href="https://t.me/bnk_sales" target="_blank" class="flex items-start space-x-4 group hover:text-primary-blue transition duration-300">
+                            <!-- Telegram Icon SVG -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-secondary-teal group-hover:text-primary-blue transition duration-300"><line x1="22" x2="11" y1="2" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
                             <div>
                                 <p class="text-gray-500 text-base">Telegram</p>
@@ -373,12 +340,11 @@
 
     </main>
 
-    <!-- 6. Футер (footer) -->
+    <!-- 6. Футер -->
     <footer class="bg-primary-blue text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <p class="text-lg mb-2">© 2018 ООО «Бухара Нефт Капитал». Все права защищены.</p>
             <div class="space-x-4 text-sm">
-                <!-- Обязательные ссылки в футере -->
                 <a href="#" class="hover:text-secondary-teal transition duration-300">Политика конфиденциальности</a>
                 <span class="opacity-50">|</span>
                 <a href="#" class="hover:text-secondary-teal transition duration-300">Условия использования</a>
@@ -387,5 +353,13 @@
     </footer>
 </body>
 </html>
+
+
+
+
+
+
+
+
 
 
